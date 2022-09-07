@@ -12,4 +12,7 @@
 
 Console.WriteLine("Введите число");
 int num = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine(numCubes(num));
+if (num <= 0)
+    Console.WriteLine("Неверное число");
+else
+    Console.WriteLine(numCubes(num));
