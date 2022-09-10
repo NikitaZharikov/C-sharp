@@ -1,6 +1,16 @@
-﻿// Напишите программу, которая задаёт массив из N элементов и выводит их на экран. 
-// N - вводится с клавиатуры. Элементы тоже вводятся с клавиатуры.
-// 5
-// 1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
-// 3
-// 6, 1, 33 -> [6, 1, 33]
+﻿Console.Write("Введите размер массива ");
+int arrayCount = Convert.ToInt32(Console.ReadLine());
+int[] array = new int[arrayCount];
+
+for (int i = 0; i < array.Length; i++)
+{
+    Console.Write("Введите элемент №" + (i + 1) + " ");
+    array[i] = Convert.ToInt32(Console.ReadLine());
+}
+
+Console.WriteLine("Вывод массива:");
+
+for (int i = 0; i < array.Length; i++)
+{
+    Console.WriteLine(array[i] + " ");
+}
